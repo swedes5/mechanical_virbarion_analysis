@@ -1,1 +1,1 @@
-# mechanical_virbarion_analysis
+# mechanical_vibration_analysis
