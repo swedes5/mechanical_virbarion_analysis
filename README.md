@@ -1,4 +1,4 @@
-# 🚀 Rotating Machinery Anomaly Detection & Order Analysis
+# 🚀 mechanical_vibration_analysis
 
 This repository contains a Python-based pipeline for machine condition monitoring, specifically designed to detect and diagnose mechanical unbalance in rotating equipment using vibration analysis and machine learning.
 
@@ -29,9 +29,25 @@ This project relies on standard data science and machine learning libraries. You
 pip install pandas numpy matplotlib seaborn scipy scikit-learn
 ```
 
-## 📂 Data Structure Requirements
+## 📂 Dataset & Citation
 
-The scripts expect a local directory (configured by default as `D:\vibration_dataset`) containing CSV files representing different states of machine health (e.g., `0D.csv`, `1D.csv` for training; `0E.csv`, `4E.csv` for evaluation).
+The data used for this analysis is the **Vibration Analysis on Rotating Shaft** dataset, available on [Kaggle](https://www.kaggle.com/datasets/jishnukoliyadan/vibration-analysis-on-rotating-shaft/data). 
+
+If you use or adapt this work, please adhere to the original authors' citation request:
+
+```bibtex
+@misc{oliver_mey_willi_neudeck_andr__schneider_olaf_enge-rosenblatt_2022,
+	title={Vibration Analysis on Rotating Shaft},
+	url={[https://www.kaggle.com/dsv/3218627](https://www.kaggle.com/dsv/3218627)},
+	DOI={10.34740/KAGGLE/DSV/3218627},
+	publisher={Kaggle},
+	author={Oliver Mey and Willi Neudeck and André Schneider and Olaf Enge-Rosenblatt},
+	year={2022}
+}
+```
+
+### Data Structure Requirements
+The scripts expect a local directory (configured by default as `D:\vibration_dataset`) containing the CSV files representing different states of machine health (e.g., `0D.csv`, `1D.csv` for training; `0E.csv`, `4E.csv` for evaluation).
 
 Each CSV file must contain at least the following columns sampled at **4096 Hz**:
 * `Vibration_1`: The raw vibration amplitude array.
